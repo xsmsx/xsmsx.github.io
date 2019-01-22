@@ -1,3 +1,16 @@
+html{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  margin: 0;
+  background: darkturquoise;
+  font-family: "URWGroteskLig   2", sans-serif;
+}
+
+
+
 .button {
   border: 1px solid #0082E5;
   width: 10em;
