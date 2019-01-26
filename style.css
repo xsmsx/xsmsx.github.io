@@ -1,11 +1,126 @@
+/*
+ACB3C5 grey blue
+776A77 lavender
+D7CECF light grey/beige
+F3F1F6 anti flash white
+DCD2DD light lanvender/rose
+dbcedb diff shade rose
+
+FFFFFF white
+D2D7DF light grey
+353535 jet
+BDBBB0 shadows (light olive)
+8A897C darker olive
+
+D8DBE2 light grey
+A9BCD0 pastel blue
+58A4B0 cadet blue
+373F51 charcoal
+DAA49A pastal pink
+*/
+
  * {
-  width: 100%;
+/*  width: 100%;
   height: 100%;
+*/
   overflow: auto;
   overflow-x: hidden;
-  padding: 20px;
+  overflow-y: scroll;
+  padding: 5px;
   margin: 0;
-  background: darkturquoise;
+  font-family: "URWGroteskLig   2", sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
+  /*  height: 100%;*/
+}
+.bgcontainer {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+.bgcontainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+.myname{
+    position: absolute;
+    left: 60%;
+    height: 100%;
+    user-select: none;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    color: (244,244,244,0.8);
+    width: 100vw;
+    font-size: 1.3em;
+    display: flex;
+    flex: 0 0% 100%;
+    flex-direction: column;
+    padding: 4vh 0px;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.topnav a {
+  float: left;
+  color: #DCD2DD;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #BDBBB0;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #8A897C;
+  color: white;
+}
+
+/* .nav {
+  background: rgba(0, 0, 0, 0.25);
+} */
+
+ul {
+  list-style-type: none;
+  margin: 50;
+  padding: 40;
+  width: 100%;
+}
+
+li a {
+  display: block;
+  color: rgba(0, 0, 0, 0.1);
+  padding: 20px 230px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: #D2D7DF;
+}
+
+body {
+  margin: 0;
   font-family: "URWGroteskLig   2", sans-serif;
 }
 
@@ -13,7 +128,8 @@ h1{
   font-size: 3em;
   margin-bottom: 0;
   padding-bottom: 0;
-  color: white;
+  padding-left: 2.7em;
+  color: #8A897C;
 }
 
 .svg_boxes {
@@ -24,12 +140,12 @@ h1{
   background: beige;
 }
 .button {
-  border: 1px solid #0082E5;
+  /*border: 1px solid #0082E5;*/
   width: 10em;
   padding: 1em;
   margin: 5px;
   border-radius: 10px;
-  background: #87BFFF
+  background: #D7CECF
 }
 
 .button:hover {
