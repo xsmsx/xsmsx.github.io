@@ -29,7 +29,7 @@ DAA49A pastal pink
   padding: 5px;
   margin: 0;
   font-family: "URWGroteskLig   2", sans-serif;
-  font-family: 'Open Sans', sans-serif !important;
+  color: #373F51;
   /*  height: 100%;*/
 }
 .bgcontainer {
@@ -56,16 +56,15 @@ DAA49A pastal pink
     user-select: none;
     background-size: cover;
     background-position: center;
-    display: flex;
     justify-content: center;
     align-items: left;
     color: (244,244,244,0.8);
     width: 100vw;
     font-size: 1.3em;
     display: flex;
-    flex: 0 0% 100%;
+    flex: 0 100% 100%;
     flex-direction: column;
-    padding: 4vh 0px;
+    padding: 0px 0px;
     background: rgba(0, 0, 0, 0.25);
 }
 
@@ -78,11 +77,11 @@ DAA49A pastal pink
 
 .topnav a {
   float: left;
-  color: #DCD2DD;
+  color: #8A897C;
   text-align: center;
-  padding: 14px 30px;
+  padding: 14px 12px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .topnav a:hover {
@@ -99,6 +98,11 @@ DAA49A pastal pink
   background: rgba(0, 0, 0, 0.25);
 } */
 
+#flipPic {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 ul {
   list-style-type: none;
   margin: 50;
@@ -108,7 +112,7 @@ ul {
 
 li a {
   display: block;
-  color: rgba(0, 0, 0, 0.1);
+  color: #8A897C;
   padding: 20px 230px;
   text-decoration: none;
 }
@@ -116,7 +120,7 @@ li a {
 /* Change the link color on hover */
 li a:hover {
   background-color: #555;
-  color: #D2D7DF;
+  color: white;
 }
 
 body {
@@ -125,30 +129,9 @@ body {
 }
 
 h1{
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 0;
   padding-bottom: 0;
-  padding-left: 2.7em;
+  padding-left:200px;
   color: #8A897C;
-}
-
-.svg_boxes {
-  width: 500px;
-  height: 300px;
-  padding: 20px;
-  margin: 20px;
-  background: beige;
-}
-.button {
-  /*border: 1px solid #0082E5;*/
-  width: 10em;
-  padding: 1em;
-  margin: 5px;
-  border-radius: 10px;
-  background: #D7CECF
-}
-
-.button:hover {
-  background: #ADD7F6;
-  color: white;
 }
