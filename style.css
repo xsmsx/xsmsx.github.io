@@ -26,9 +26,10 @@ DAA49A pastal pink
   overflow: auto;
   overflow-x: hidden;
   overflow-y: scroll;
-  padding: 5px;
+  padding: 0px;
   margin: 0;
-  font-family: "URWGroteskLig   2", sans-serif;
+  /* font-family: "URWGroteskLig   2", sans-serif; */
+  font-family: "monaco", monospace;
   color: #373F51;
   /*  height: 100%;*/
 }
@@ -67,9 +68,27 @@ DAA49A pastal pink
     padding: 0px 0px;
     background: rgba(0, 0, 0, 0.25);
 }
+.content{
+    position: absolute;
+    left: 10%;
+    height: 100%;
+    user-select: none;
+    /* background-size: cover; */
+    /* background-position: left; */
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 100vw;
+    font-size: 1.3em;
+    display: flex;
+    flex: 0 0% 100%;
+    flex-direction: column;
+    padding: 0px 0px;
+    background: rgba(0, 0, 0, 0.05);
+}
 
 /* Add a black background color to the top navigation */
-.topnav {
+/* .topnav {
   background-color: #FFFFFF;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -105,21 +124,24 @@ DAA49A pastal pink
 
 ul {
   list-style-type: none;
-  margin: 50;
-  padding: 40;
+  margin: 0;
+  padding: 10;
   width: 100%;
 }
 
 li a {
   display: block;
   color: #8A897C;
-  padding: 20px 230px;
+  padding: 30px 160px;
   text-decoration: none;
 }
 
-/* Change the link color on hover */
 li a:hover {
   background-color: #555;
+  color: white;
+}
+li a.active {
+  background-color: #8A897C;
   color: white;
 }
 
@@ -131,7 +153,20 @@ body {
 h1{
   font-size: 2em;
   margin-bottom: 0;
-  padding-bottom: 0;
-  padding-left:200px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left:160px;
   color: #8A897C;
+}
+h2{
+  display: block;
+  text-decoration: none;
+  font-size: 2em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left:160px;
+  color: black;
+}
+p{
+  color: #373F51;
 }
