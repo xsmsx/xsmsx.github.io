@@ -20,9 +20,6 @@ DAA49A pastal pink
 */
 
  * {
-/*  width: 100%;
-  height: 100%;
-*/
   overflow: auto;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -63,7 +60,6 @@ DAA49A pastal pink
     width: 100vw;
     font-size: 1.3em;
     display: flex;
-    flex: 0 100% 100%;
     flex-direction: column;
     padding: 0px 0px;
     background: rgba(0, 0, 0, 0.25);
@@ -75,48 +71,16 @@ DAA49A pastal pink
     user-select: none;
     /* background-size: cover; */
     /* background-position: left; */
+    display: flex;
     justify-content: center;
     align-items: center;
     color: black;
     width: 100vw;
     font-size: 1.3em;
-    display: flex;
-    flex: 0 0% 100%;
     flex-direction: column;
     padding: 0px 0px;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.03);
 }
-
-/* Add a black background color to the top navigation */
-/* .topnav {
-  background-color: #FFFFFF;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-.topnav a {
-  float: left;
-  color: #8A897C;
-  text-align: center;
-  padding: 14px 12px;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.topnav a:hover {
-  background-color: #BDBBB0;
-  color: white;
-}
-
-.topnav a.active {
-  background-color: #8A897C;
-  color: white;
-}
-
-/* .nav {
-  background: rgba(0, 0, 0, 0.25);
-} */
-
 #flipPic {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -137,11 +101,13 @@ li a {
 }
 
 li a:hover {
-  background-color: #555;
+  /* background-color: #555; */
+  background-color: rgba(85,85,85,0.8);
   color: white;
 }
 li a.active {
-  background-color: #8A897C;
+  /* background-color: #8A897C; */
+  background-color: rgba(138,137,124,0.8);
   color: white;
 }
 
@@ -169,4 +135,33 @@ h2{
 }
 p{
   color: #373F51;
+  padding-bottom: 5px;
+}
+
+#work {
+  justify-content:space-around;
+  align-items:flex-start;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-collapse: collapse;
+  padding-left: 20%;
+  color: #373F51;
+}
+
+#work td, #work th {
+  padding: 12px;
+  align-items: right;
+}
+
+#work tr:nth-child(even){background-color: rgba(255,255,255,0.7);}
+
+#work tr:hover {background-color: rgba(221,221,221,0.9);}
+
+#work th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgba(138,137,124,0.8);
+  color: white;
 }
