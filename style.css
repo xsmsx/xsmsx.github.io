@@ -22,7 +22,7 @@ DAA49A pastal pink
  * {
   overflow: auto;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
   padding: 0px;
   margin: 0;
   /* font-family: "URWGroteskLig   2", sans-serif; */
