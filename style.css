@@ -22,7 +22,7 @@ DAA49A pastal pink
  * {
   overflow: auto;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
   padding: 0px;
   margin: 0;
   /* font-family: "URWGroteskLig   2", sans-serif; */
@@ -69,8 +69,6 @@ DAA49A pastal pink
     left: 10%;
     height: 100%;
     user-select: none;
-    /* background-size: cover; */
-    /* background-position: left; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,12 +99,10 @@ li a {
 }
 
 li a:hover {
-  /* background-color: #555; */
   background-color: rgba(85,85,85,0.8);
   color: white;
 }
 li a.active {
-  /* background-color: #8A897C; */
   background-color: rgba(138,137,124,0.8);
   color: white;
 }
